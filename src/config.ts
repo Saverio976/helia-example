@@ -6,7 +6,8 @@ import { mdns } from '@libp2p/mdns';
 import type { Datastore } from 'interface-datastore'
 
 export const config = {
-    dbDir: "./.db",
+    blockstoreDir: "./.dbBlock",
+    datastoreDir: "./.dbData"
 }
 
 export const configp2p = (datastore: Datastore) => {
