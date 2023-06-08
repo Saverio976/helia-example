@@ -23,7 +23,6 @@
     "datastore-fs": "^9.1.1",
     "helia": "^1.2.1",
     "libp2p": "^0.45.4",
-    "orbit-db": "github:orbitdb/orbit-db-nextgen#helia",
     "typescript": "^5.1.3"
   }
 }
