@@ -31,7 +31,8 @@ async function main() {
         if (process.argv[2] === 'string' ) {
             await add(helia, process.argv[4]);
         } else if (process.argv[2] === 'json') {
-            await add(helia, process.argv[4]);
+            const obj = JSON.parse(process.argv[4]);
+            await add(helia, obj);
         } else {
             printHelp();
             throw Error('Invalid type');
