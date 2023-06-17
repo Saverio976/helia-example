@@ -1,0 +1,4 @@
+[submodule "orbitdb"]
+	path = orbitdb
+	url = https://github.com/Saverio976/orbit-db-nextgen.git
+	branch = helia
