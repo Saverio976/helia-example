@@ -7,8 +7,16 @@ import type { Datastore } from 'interface-datastore'
 
 export const config = {
     blockstoreDir: "./.dbBlock",
-    datastoreDir: "./.dbData"
-}
+    datastoreDir: "./.dbData",
+    keyPath: "./.keys",
+};
+
+export const dbConfs = {
+    events: {
+        name: "eventsDb",
+        identity: "userA",
+    },
+};
 
 export const configp2p = (datastore: Datastore) => {
     return {
@@ -41,4 +49,4 @@ export const configp2p = (datastore: Datastore) => {
             // })
         ],
     }
-}
+};
